@@ -3,17 +3,17 @@ import React from 'react'
 const Header = () => {
   return (
     <div  className="fixed top-0 left-0 right-0 bg-white bg-opacity-60 backdrop-blur-md shadow z-10">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-4xl mx-auto flex justify-between items-center p-3">
 
-            <nav>
-                <h1>Logo</h1>
-                <ul>
+            
+                <h1 className="text-xl font-semibold text-gray-700">Logo</h1>
+                <ul className="flex space-x-8 text-gray-700">
                     <a href="">Home</a>
                     <a href="">About</a>
                     <a href="">Contact</a>
                     <a href="">Card</a>
                 </ul>
-            </nav>
+          
 
         </div>
 

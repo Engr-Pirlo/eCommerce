@@ -6,11 +6,11 @@ function App() {
  
 
   return (
-   <div className="tex-lg">
+   <div>
     
     <Header/>
 
-    {/* <Outlet /> */}
+    <Outlet />
 
     <Footer/>
        
