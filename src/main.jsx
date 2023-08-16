@@ -8,9 +8,6 @@ import Contact from "./pages/Contact";
 import Product from "./pages/Product";
 import Products from "./pages/Products";
 
-
-
-
 const routerProvider = createBrowserRouter([
   {
     path: "/about",
