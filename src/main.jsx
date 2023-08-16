@@ -7,28 +7,43 @@ import Card from "./pages/Card";
 import Contact from "./pages/Contact";
 import Product from "./pages/Product";
 import Products from "./pages/Products";
+import App from "./App";
+
 
 const routerProvider = createBrowserRouter([
-  {
-    path: "/about",
-    element: <About />,
-  },
-  {
-    path: "/contact",
-    element: <Contact />,
-  },
-  {
-    path: "/card",
-    element: <Card />,
-  },
-  {
-    path: "/product",
-    element: <Product />,
-  },
-  {
-    path: "/product-details/:id",
-    element: <Products/>
-  },
+   {
+     
+    path: "/",
+    element: <App/>,
+    children: [
+
+      {
+        path: "/about",
+        element: <About />,
+      },
+      {
+        path: "/contact",
+        element: <Contact />,
+      },
+      {
+        path: "/card",
+        element: <Card />,
+      },
+      {
+        path: "/product",
+        element: <Product />,
+      },
+      {
+        path: "/product-details/:id",
+        element: <Products/>
+      },
+      
+    ]
+
+   },
+   
+
+ 
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

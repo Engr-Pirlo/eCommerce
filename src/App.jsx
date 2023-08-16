@@ -1,13 +1,17 @@
-import { useState } from 'react'
-import './App.css'
+import { Outlet } from "react-router-dom"
 
 function App() {
  
 
   return (
-    <>
-     <h1 className="text-4xl text-pink-600 px-3 mt-3 text-center">eCommerce Project</h1>
-    </>
+   <div className="tex-lg">
+    <h1>this is header</h1>
+
+    <Outlet />
+
+    <p>this Footer</p>
+       
+   </div>
   )
 }
 
