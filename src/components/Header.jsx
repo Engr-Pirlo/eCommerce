@@ -1,20 +1,21 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <div className="fixed top-0 left-0 right-0 bg-white bg-opacity-60 backdrop-blur-md shadow z-10">
       <div className="max-w-4xl mx-auto flex justify-between items-center p-3">
-        <h1 className="text-xl font-semibold text-gray-700">Logo</h1>
+        <Link to="/" className="text-xl font-semibold text-gray-700">Logo</Link>
         <ul className="flex space-x-8 text-gray-700">
-          <a className="hover:text-pink-600" href="">
+          <Link to='/' className="hover:text-pink-600" href="">
             Home
-          </a>
-          <a className="hover:text-pink-600" href="">
+          </Link>
+          <Link to='/' className="hover:text-pink-600" href="">
             About
-          </a>
-          <a className="hover:text-pink-600" href="">
+          </Link>
+          <Link to='/' className="hover:text-pink-600" href="">
             Contact
-          </a>
+          </Link>
           <div className="relative">
             <a className="hover:text-pink-600" href="">
               <svg
