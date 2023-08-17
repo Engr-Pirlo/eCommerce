@@ -14,6 +14,20 @@ const ProductsList = () => {
             src={product.image}
             alt={product.name}
           />
+          <div className="p-4">
+            <h2 className="font-bold text-xl mb-2">{product.name}</h2>
+            <p className="text-gray-600 truncate">{product.description}</p>
+
+            <div className="flex justify-between items-center">
+              <span className="text-blue-600 font-semibold">
+                ${product.price}
+              </span>
+              <div className="text-sm text-gray-500">
+                {product.stock > 0 ? `${product.stock} in Stock` : "Out of Stock"}
+
+              </div>
+            </div>
+          </div>
         </div>
       ))}
     </div>
