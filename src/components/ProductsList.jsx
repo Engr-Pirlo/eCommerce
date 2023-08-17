@@ -4,7 +4,7 @@ import ProductsData from "../assets/ProductsData.json";
 const ProductsList = () => {
   console.log(ProductsData);
   return (
-    <div className="grid grid-cols-1 md: grid-cols-2 lg: grid-cols-3">
+    <div className="grid grid-cols-1 md: grid-cols-2 lg: grid-cols-3 gap-4">
       {/* map through the products data and display each product */}
 
       {ProductsData.map((product) => (
@@ -23,9 +23,20 @@ const ProductsList = () => {
                 ${product.price}
               </span>
               <div className="text-sm text-gray-500">
-                {product.stock > 0 ? `${product.stock} in Stock` : "Out of Stock"}
-
+                {product.stock > 0
+                  ? `${product.stock} in Stock`
+                  : "Out of Stock"}
               </div>
+            </div>
+
+            <div className="mt-4">
+              <span className="text-yellow-500">
+                {"★".repeat(Math.round(product.rating))}
+              </span>
+
+              <span className="text-gray-300">
+                {"★".repeat(Math.round(5 - product.rating))}
+              </span>
             </div>
           </div>
         </div>
