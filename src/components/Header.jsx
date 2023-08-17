@@ -7,17 +7,17 @@ const Header = () => {
       <div className="max-w-4xl mx-auto flex justify-between items-center p-3">
         <Link to="/" className="text-xl font-semibold text-gray-700">Logo</Link>
         <ul className="flex space-x-8 text-gray-700">
-          <Link to='/' className="hover:text-pink-600" href="">
+          <Link to='/' className="hover:text-pink-600">
             Home
           </Link>
-          <Link to='/' className="hover:text-pink-600" href="">
+          <Link to='/about' className="hover:text-pink-600">
             About
           </Link>
-          <Link to='/' className="hover:text-pink-600" href="">
+          <Link to='/contact' className="hover:text-pink-600">
             Contact
           </Link>
           <div className="relative">
-            <a className="hover:text-pink-600" href="">
+            <Link to='/card' className="hover:text-pink-600">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -34,7 +34,7 @@ const Header = () => {
               <span className="absolute -top-1 -right-1 bg-pink-600 text-white rounded-full text-xs w-5 h-5 flex items-center justify-center">
                 0
               </span>
-            </a>
+            </Link>
           </div>
         </ul>
       </div>
