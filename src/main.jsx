@@ -5,8 +5,8 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import About from "./pages/About";
 import Card from "./pages/Card";
 import Contact from "./pages/Contact";
-import Product from "./pages/Product";
 import Products from "./pages/Products";
+import Product from "./pages/Products";
 import App from "./App";
 
 
@@ -30,7 +30,7 @@ const routerProvider = createBrowserRouter([
         element: <Card />,
       },
       {
-        path: "/product",
+        path: "/products",
         element: <Product />,
       },
       {
