@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-const Productsitems = ({product}) => {
+const ProductItems = ({product}) => {
   return (
     <div className="border-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-200 ease-in">
     <img
@@ -38,4 +38,4 @@ const Productsitems = ({product}) => {
   )
 }
 
-export default Productsitems
+export default ProductItems
