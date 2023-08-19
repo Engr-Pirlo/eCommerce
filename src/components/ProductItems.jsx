@@ -6,8 +6,8 @@ const ProductItems = ({product}) => {
     <div className="border-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-200 ease-in">
     <img
       className="w-full h-48 object-cover"
-      src={product.image}
-      alt={product.name}
+      src={product.thumbnail}
+      alt={product.title}
     />
     <div className="p-4">
       <h2 className="font-bold text-xl mb-2">{product.name}</h2>
