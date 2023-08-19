@@ -10,7 +10,7 @@ const ProductItems = ({product}) => {
       alt={product.title}
     />
     <div className="p-4">
-      <h2 className="font-bold text-xl mb-2">{product.name}</h2>
+      <h2 className="font-bold text-xl mb-2">{product.title}</h2>
       <p className="text-gray-600 truncate">{product.description}</p>
 
       <div className="flex justify-between items-center">
