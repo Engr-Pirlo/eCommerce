@@ -6,7 +6,7 @@ import About from "./pages/About";
 import Card from "./pages/Card";
 import Contact from "./pages/Contact";
 import Products from "./pages/Products";
-import Product from "./pages/Products";
+import Product from "./pages/Product";
 import App from "./App";
 
 
@@ -30,7 +30,7 @@ const routerProvider = createBrowserRouter([
         element: <Card />,
       },
       {
-        path: "/products",
+        path: "/product",
         element: <Product />,
       },
       {
