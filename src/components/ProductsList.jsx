@@ -34,7 +34,7 @@ const ProductsList = () => {
     <div className="grid grid-cols-1 md: grid-cols-2 lg: grid-cols-3 gap-4">
       {/* map through the products data and display each product */}
 
-      {products
+      {products.length > 0 &&
         products.map((product) => (
           <ProductItems key={product.id} product={product} />
         ))}
